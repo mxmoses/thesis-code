@@ -1,4 +1,14 @@
-"""NAdam with cosine decay in Jax."""
+"""
+NAdam with cosine decay in JAX.
+
+Acknowledgments:
+- Portions of this code are derived from or inspired by or directly use the following:
+    - AlgoPerf code: https://github.com/mlcommons/algorithmic-efficiency
+    - Keras implementation of ReduceLROnPlateau: https://github.com/keras-team/keras/blob/v3.6.0/keras/src/callbacks/reduce_lr_on_plateau.py
+    - PyTorch implementation of ReduceLROnPlateau: https://pytorch.org/docs/stable/_modules/torch/optim/lr_scheduler.html#ReduceLROnPlateau
+    - Optax implementation of ReduceLROnPlateau: https://github.com/google-deepmind/optax/blob/main/optax/contrib/_reduce_on_plateau.py
+- These libraries and repositories provided foundational insights into optimizer implementations.
+"""
 
 import functools
 import logging
